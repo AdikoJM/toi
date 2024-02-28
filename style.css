@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "roboto";
+}
+body{
+    background: navy;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 10%;
+    z-index: 100;
+}
+.header a{
+    color: white;
+    text-decoration: none;
+}
+.navbar a{
+    margin-left: 10px;
+    transition: .3s;
+}
+.navbar a:hover,
+.navbar a.active{
+    color: violet;
+}
+.sec1{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding: 0 10%;
+    color: white;
+}
+.sec1-content{
+    max-width: 600px;
+}
+.sec1-content h1{
+    font-weight: 700;
+    font-size: 44px;
+}
+.sec1-content h3{
+    font-weight: 700;
+    font-size: 32px;
+    color: violet;
+}
+.sec1-content p{
+    font-weight: 700;
+    font-size: 16px;
+    margin: 16px 0 40px;
+}
+.sec1-content .btn{
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+}
+.sec1-content .btn a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: violet;
+    width: 150px;
+    height: 100%;
+    border: 2px solid violet;
+    border-radius: 8px;
+    text-decoration: none;
+    color: blue;
+    font-weight: 700;
+    z-index: 1;
+    overflow: hidden;
+}
+.sec1-content .btn a:nth-child(2){
+    background: navy;
+    color: white;
+}
+.sec1-content .btn a:nth-child(2)::before{
+    background: violet;
+}
+.sec1-content .btn a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: white;
+    z-index: -1;
+    transition: .5s;
+}
+.sec1-content .btn a:hover::before{
+    width: 100%;
+}
+#fb{
+    position: absolute;
+    color: white;
+    margin-top: 160px;
+    font-size: 30px;
+}
+
